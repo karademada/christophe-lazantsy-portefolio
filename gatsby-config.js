@@ -5,6 +5,14 @@ module.exports = {
     author: `Chris Lazantsy`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options:{
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENFUL_ACCESS_TOKEN
+      }
+
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
