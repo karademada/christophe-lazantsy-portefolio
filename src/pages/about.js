@@ -1,11 +1,13 @@
 import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const AboutPage = () => {
   return (
     <div>
       <Layout>
+        <Seo title="A propos"/>
         <h1>About Page!</h1>
         <p>I am Salahdin an autodidacte developer</p>
         <Link to="/contact">Contact Me !</Link>
