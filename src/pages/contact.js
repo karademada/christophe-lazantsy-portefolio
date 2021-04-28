@@ -28,8 +28,8 @@ const ContactPage = () => {
             <input id="email" type="type" name="email" />
           </div>
           <div>
-            <label htmlFor="email">Commentaire</label><br />
-            <textarea id="email" type="type" name="comments"></textarea>
+            <label htmlFor="commentaire">Commentaire</label><br />
+            <textarea id="commentaire" type="type" name="commentaire"></textarea>
           </div>
           <br/>
           <button>Envoyez les informations</button>
