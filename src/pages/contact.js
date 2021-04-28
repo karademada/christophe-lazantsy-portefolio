@@ -6,9 +6,9 @@ const ContactPage = () => {
   return (
     <div>
       <Layout>
-        <Seo title="Contactez moi" />
-        <h1>Contactez pour un projet.</h1>
-        <form
+        <Seo title="Contactez moi"/>
+        <h1>Contactez moi pour un projet innovant.</h1>
+        <form 
           name="contact v1"
           method="post"
           data-netlify="true"
