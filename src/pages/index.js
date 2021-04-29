@@ -8,11 +8,10 @@ const IndexPage = () => (
   <div>
     <Layout>
       <Seo title="Home" />
-      <h2>Salam aleykoum</h2>
+      <h2>Salam aleykoum, Shalom, Salut, Yo...</h2>
       <h3>
-        I'm Salahdin Lazantsy a fullstack senior developer, living in Créteil.
+        Je suis Christophe Lazantsy un fullstack Javascript senior développeur (purée qu'est ce que c'est pompeux), et j'ai pas finis, UX/UI, graphiste, architecte, Photographe qui vit à Créteil.
       </h3>
-      {/* <img src="./images/panoramique-creteil.png" alt="Vue levé de soleil panoramique de créteil, depuis le parc de créteil" /> */}
       <StaticImage
         src="../images/panoramique-creteil.png"
         width={750}
