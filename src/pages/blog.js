@@ -10,9 +10,19 @@ const Blog = () => {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
+            id
             title
             slug
             publishedDate(formatString: "Do MMMM, YYYY")
+            body {
+              references {
+                contentful_id
+                file {
+                  url
+                }
+                gatsbyImageData
+              }
+            }
           }
         }
       }
@@ -26,11 +36,13 @@ const Blog = () => {
         <h1>Blog</h1>
         <ol className={blogStyles.posts}>
           {datas.allContentfulBlogPost.edges.map((edge, index) => {
+            console.log(edge)
             return (
               <li key={index} className={blogStyles.post}>
                 <Link to={edge.node.slug}>
                   <h2>{edge.node.title}</h2>
                   <p>{edge.node.publishedDate}</p>
+                  <img src={edge.node.body.references[0].file.url} alt={edge.node.title} />
                 </Link>
               </li>
             )
