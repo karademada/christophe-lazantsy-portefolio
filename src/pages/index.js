@@ -21,7 +21,7 @@ const IndexPage = () => (
         style={{ marginBottom: `1.45rem` }}
       />
       <p>
-        Need a developer ? <Link to="/contact">Contact me!</Link>
+        Besoin d'un développeur ? <Link to="/contact">Contactez moi ici.</Link>
       </p>
     </Layout>
   </div>

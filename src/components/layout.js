@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
     >
       {state.show
         ? [
-            <div className="demo-thead" key="a" className={layoutStyles.container}>
+            <div className={`demo-thead ${layoutStyles.container}`}>
               <div className={layoutStyles.content}>
                 <Header siteTitle={data.site.siteMetadata.title} />
                 <main>{children}</main>
