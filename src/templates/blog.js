@@ -9,7 +9,7 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
-      publishedDate(formatString: "Do MMMM, YYY")
+      publishedDate(formatString: "Do MMMM, YYYY")
       body {
         raw
         references {
