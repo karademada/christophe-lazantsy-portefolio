@@ -9,32 +9,47 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
 
-
 import Header from "./header"
 import Footer from "./footer"
+
+import QueueAnim from "rc-queue-anim"
 
 import "../styles/index.scss"
 import * as layoutStyles from "./layout.module.scss"
 
 const Layout = ({ children }) => {
+  const state = {
+    show: true
+  };
   const data = useStaticQuery(graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        author
+    query {
+      site {
+        siteMetadata {
+          title
+          author
+        }
       }
     }
-  }
-`)
+  `)
   return (
-    <div className={layoutStyles.container}>
-      <div className={layoutStyles.content}>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
-      </div>
-      <Footer authorName={data.site.siteMetadata.author}/>
-    </div>
+    <QueueAnim
+      className="demo-content"
+      key="demo"
+      type={["right", "left"]}
+      ease={["easeOutQuart", "easeInOutQuart"]}
+    >
+      {state.show
+        ? [
+            <div className="demo-thead" key="a" className={layoutStyles.container}>
+              <div className={layoutStyles.content}>
+                <Header siteTitle={data.site.siteMetadata.title} />
+                <main>{children}</main>
+              </div>
+              <Footer authorName={data.site.siteMetadata.author} />
+            </div>,
+          ]
+        : null}
+    </QueueAnim>
   )
 }
 
