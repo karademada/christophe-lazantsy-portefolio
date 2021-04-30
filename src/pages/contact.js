@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as contactStyles from "./contact.module.scss"
+import "./contact.module.scss"
 
 const ContactPage = () => {
   return (
     <div>
       <Layout>
         <Seo title="Contactez moi"/>
-        <h1>Contactez moi pour un projet innovant.</h1>
+        <h3>Contactez moi pour un projet innovant.</h3>
         <form 
           name="contact v1"
           method="post"

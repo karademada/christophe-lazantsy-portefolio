@@ -33,7 +33,7 @@ const Blog = () => {
     <div>
       <Layout>
         <Seo title="Blog" />
-        <h1>Blog</h1>
+        <h3>Mes articles</h3>
         <ol className={blogStyles.posts}>
           {datas.allContentfulBlogPost.edges.map((edge, index) => {
             console.log(edge)

@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Seo from "../components/seo"
+import "../pages/blog.module.scss"
 
 export const query = graphql`
   query($slug: String!) {
@@ -42,7 +43,7 @@ const Blog = props => {
   return (
     <Layout>
       <Seo title={props.data.contentfulBlogPost.title} />
-      <h1>{props.data.contentfulBlogPost.title}</h1>
+      <h3>{props.data.contentfulBlogPost.title}</h3>
       <p>{props.data.contentfulBlogPost.publishedDate}</p>
       {documentToReactComponents(
         JSON.parse(props.data.contentfulBlogPost.body.raw),

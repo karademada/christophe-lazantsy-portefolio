@@ -26,7 +26,7 @@ const AboutPage = props => {
     <div>
       <Layout>
         <Seo title="A propos" />
-        <h1>{datas.contentfulAboutPage.title}</h1>
+        <h3>{datas.contentfulAboutPage.title}</h3>
         <img src={datas.contentfulAboutPage.aboutPicture.file.url} alt={datas.contentfulAboutPage.aboutPicture.title} />
 
         {documentToReactComponents(

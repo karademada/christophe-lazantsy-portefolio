@@ -8,7 +8,7 @@ const IndexPage = () => (
   <div>
     <Layout>
       <Seo title="Home" />
-      <h2>Salam aleykoum, Shalom, Salut, Yo...</h2>
+      <h3>Bonjour à tous.</h3>
       <p>
         Je suis Christophe Lazantsy un fullstack Javascript senior développeur (purée qu'est ce que c'est pompeux), et j'ai pas finis, UX/UI, graphiste, architecte, Photographe qui vit à Créteil.
       </p>
