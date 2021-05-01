@@ -36,7 +36,6 @@ const Blog = () => {
         <h3>Mes articles</h3>
         <ol className={blogStyles.posts}>
           {datas.allContentfulBlogPost.edges.map((edge, index) => {
-            console.log(edge)
             return (
               <li key={index} className={blogStyles.post}>
                 <Link to={edge.node.slug}>

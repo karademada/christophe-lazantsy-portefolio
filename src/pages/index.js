@@ -10,7 +10,7 @@ const IndexPage = () => (
       <Seo title="Home" />
       <h3>Bonjour à tous.</h3>
       <p>
-        Je suis Christophe Lazantsy un fullstack Javascript senior développeur (purée qu'est ce que c'est pompeux), et j'ai pas finis, UX/UI, graphiste, architecte, Photographe qui vit à Créteil.
+        Je suis Christophe Lazantsy, un développeur fullstack Javascript senior, UX/UI, graphiste, architecte, photographe qui vit à Créteil.
       </p>
       <StaticImage
         src="../images/panoramique-creteil.png"
@@ -21,7 +21,7 @@ const IndexPage = () => (
         style={{ marginBottom: `1.45rem` }}
       />
       <p>
-        Besoin d'un développeur ? <Link to="/contact">Contactez moi ici.</Link>
+        Besoin d'un développeur ? <Link to="/contact">Contactez moi.</Link>
       </p>
     </Layout>
   </div>

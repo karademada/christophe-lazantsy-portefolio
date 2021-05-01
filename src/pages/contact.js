@@ -8,7 +8,7 @@ const ContactPage = () => {
     <div>
       <Layout>
         <Seo title="Contactez moi"/>
-        <h3>Contactez moi pour un projet innovant.</h3>
+        <h3>Contactez-moi pour un projet innovant.</h3>
         <form 
           name="contact v1"
           method="post"
@@ -36,7 +36,7 @@ const ContactPage = () => {
             <input id="email" type="type" name="email" />
           </div>
           <div>
-            <label htmlFor="commentaire">Commentaire</label>
+            <label htmlFor="commentaire">Message</label>
             <br />
             <textarea
               id="commentaire"
@@ -45,7 +45,7 @@ const ContactPage = () => {
             ></textarea>
           </div>
           <br />
-          <button>Envoyez les informations</button>
+          <button>Envoyer</button>
         </form>
         <p>
           Contactez moi sur

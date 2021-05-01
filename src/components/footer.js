@@ -6,7 +6,7 @@ const Footer = ({ authorName }) => {
   return (
     <footer className={footerStyles.footer}>
       <p>
-        create by {authorName} © {new Date().getFullYear()}
+        created by {authorName} © {new Date().getFullYear()}
       </p>
     </footer>
   )
