@@ -2,22 +2,39 @@ import React from "react"
 import { useForm } from "react-hook-form"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import axios from "axios"
+import * as qs from "query-string"
 import "./contact.module.scss"
 
-const ContactPage = () => {
+const ContactPage = (props) => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm()
-  const onSubmit = data => console.log(data)
+
+  const onSubmit = data => {
+    console.log(data);
+    const axiosOptions = {
+      url: props.location.pathname,
+      method: "post",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      data: qs.stringify(data),
+    }
+    axios(axiosOptions)
+    .then(response => {
+      console.log(response);
+    })
+    .catch(err =>
+      console.log(err)
+    )
+  }
   return (
     <div>
       <Layout>
         <Seo title="Contactez moi" />
         <h3>Contactez-moi pour un projet innovant.</h3>
-        <form
+        <form 
           name="contact v1"
           method="post"
           data-netlify="true"
