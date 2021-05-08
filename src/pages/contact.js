@@ -8,8 +8,10 @@ const ContactPage = () => {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm()
+  const onSubmit = data => console.log(data)
   return (
     <div>
       <Layout>
@@ -20,7 +22,7 @@ const ContactPage = () => {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit('submit')} // eslint-disable-line
+          onSubmit={handleSubmit(onSubmit)}
         >
           <input type="hidden" name="form-name" value="contact v1" />
           <div hidden>
