@@ -20,7 +20,7 @@ const ContactPage = () => {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit(submit)} // eslint-disable-line
+          onSubmit={handleSubmit('submit')} // eslint-disable-line
         >
           <input type="hidden" name="form-name" value="contact v1" />
           <div hidden>
