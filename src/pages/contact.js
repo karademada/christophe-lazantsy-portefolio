@@ -16,7 +16,7 @@ const ContactPage = (props) => {
   const onSubmit = data => {
     console.log(data);
     const axiosOptions = {
-      url: props.location.pathname,
+      url: '/',
       method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       data: qs.stringify(data),
