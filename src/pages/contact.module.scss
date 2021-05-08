@@ -1,4 +1,25 @@
-input, textarea{
+$color-default: grey;
+$color-invalid: red;
+$color-valid: green;
+
+.error-message {
+    display: none;
+    font-weight: bold;
+    color: $color-invalid;
+}
+
+input,
+textarea {
     width: 100%;
     margin-bottom: 1rem;
+    border: 2px solid $color-default;
+}
+
+span {
+    color: $color-invalid;
+}
+
+span::before {
+    display: inline;
+    content: "⚠ ";
 }

@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Seo from "../components/seo"
+import Comments from "../components/comments"
 import "../pages/blog.module.scss"
 
 export const query = graphql`
@@ -49,6 +50,7 @@ const Blog = props => {
         JSON.parse(props.data.contentfulBlogPost.body.raw),
         options
       )}
+      <Comments />
     </Layout>
   )
 }

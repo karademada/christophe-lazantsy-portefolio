@@ -1,23 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-const options = {
-  cMapUrl: 'cmaps/',
-  cMapPacked: true,
-};
-
 const AboutPage = props => {
-  const file = './sample.pdf';
-  const [numPages, setNumPages] = useState(null);
-
-
-  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
-    setNumPages(nextNumPages);
-  }
-
   const datas = useStaticQuery(graphql`
     query {
       contentfulAboutPage {
