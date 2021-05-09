@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { minMaxLength, validEmail } from "../utils/validations"
-import * as contactStyles from "./contact.module.scss"
+import "./contact.module.scss"
 
 const ContactPage = () => {
   const [contact, setContact] = useState({})
