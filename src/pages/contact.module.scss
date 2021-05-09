@@ -8,6 +8,7 @@ $color-valid: green;
     color: $color-invalid;
 }
 
+
 input,
 textarea {
     width: 100%;
@@ -22,4 +23,21 @@ span {
 span::before {
     display: inline;
     content: "⚠ ";
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: $color-invalid;
+  }
+input:not(:focus):not(:placeholder-shown):invalid .error{
+    border-color: $color-invalid;
+  }
+input:not(:focus):not(:placeholder-shown):valid .valid{
+    border-color: $color-valid;
+  }
+
+.error{
+    border: 1px solid $color-invalid;
+}
+.valid{
+    border: 1px solid $color-valid;
 }
