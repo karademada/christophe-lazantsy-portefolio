@@ -27,6 +27,7 @@ const ContactPage = () => {
               id="nom"
               type="type"
               name="nom"
+              required
             />
           </div>
           <div>
@@ -36,6 +37,7 @@ const ContactPage = () => {
               id="prenom"
               type="type"
               name="prenom"
+              required
             />
           </div>
           <div>
@@ -45,6 +47,7 @@ const ContactPage = () => {
               id="email"
               type="type"
               name="email"
+              required
             />
           </div>
           <div>
@@ -54,6 +57,7 @@ const ContactPage = () => {
               id="commentaire"
               type="type"
               name="commentaire"
+              required
             ></textarea>
           </div>
           <br />
