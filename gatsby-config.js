@@ -1,3 +1,6 @@
+console.log(process.env.CONTENTFUL_SPACE_ID)
+console.log(process.env.CONTENFUL_ACCESS_TOKEN)
+
 module.exports = {
   siteMetadata: {
     title: `Christophe Lazantsy`,
@@ -9,8 +12,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options:{
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENFUL_ACCESS_TOKEN
+        spaceId: "699tfdaaovjy",
+        accessToken: "2B2679kG3TONW7eJ6wN7Cs-XC72aId526MCqN3Pw1fM"
       }
 
     },
