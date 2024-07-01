@@ -49,6 +49,15 @@ const Header = ({ siteTitle }) => {
               About
             </Link>
           </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/resume"
+            >
+              Mon CV
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
