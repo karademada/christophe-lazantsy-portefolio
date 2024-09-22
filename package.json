@@ -36,7 +36,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby build",
     "develop": "./node_modules/.bin/env-cmd gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",

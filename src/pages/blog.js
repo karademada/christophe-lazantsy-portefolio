@@ -41,7 +41,7 @@ const Blog = () => {
                 <Link to={edge.node.slug}>
                   <h2>{edge.node.title}</h2>
                   <p>{edge.node.publishedDate}</p>
-                  <img src={edge.node.body.references[0].file.url} alt={edge.node.title} />
+                  <img src={edge.node.body.references[0]?.file.url} alt={edge.node.title} />
                 </Link>
               </li>
             )
