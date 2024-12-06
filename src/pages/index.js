@@ -20,6 +20,13 @@ const IndexPage = () => (
         alt="Vue levé de soleil panoramique de créteil, depuis le parc de créteil"
         style={{ marginBottom: `1.45rem` }}
       />
+      <section class="mb-3 section-dependencies">
+        <a class="dep-container text-center" href="/search?dependencies=React%40latest&amp;sections=course%3ACourses">
+          <span class="img">
+            <img href="react"/>
+         </span>
+         </a>
+      </section>
       <p>
         Besoin d'un développeur ? <Link to="/contact">Contactez moi.</Link>
       </p>
